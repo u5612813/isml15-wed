@@ -18,3 +18,18 @@ def trapz(x, y):
     for ix in range(len(x) - 1):
         area += 0.5 * (sx[ix + 1] - sx[ix]) * (sy[ix + 1] + sy[ix])
     return area
+
+
+def auc(y_true,y_score):
+    """
+    Area under the receiver operating characteristic.
+    Args: y_true - vectors of binary labels in {0,1}^n
+    y_score - vector, usually in R^n
+    Returns the AUC
+    """
+
+    assert len(y_true) == len(y_score), "vectors are not aligned"
+
+    print("I'm not implemented yet!")
+
+
